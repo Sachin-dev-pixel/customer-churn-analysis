@@ -1,169 +1,173 @@
-# customer-churn-analysis
-# Customer Churn Analysis | SQL, Excel & Power BI
+# 📊 Customer Churn Analysis | Excel, SQL & Power BI
 
 ## 📌 Project Overview
 
-Customer churn is a major business problem for subscription-based companies. This project analyzes customer data to identify the key factors associated with customer churn and provides data-driven recommendations for improving customer retention.
+This project presents an end-to-end **Customer Churn Analysis** using Excel, SQL, and Power BI.
 
-The analysis was performed using **Excel, SQL and Power BI**.
+The objective is to analyze customer behavior, identify customer segments associated with higher churn, understand key churn patterns, and provide data-driven recommendations to improve customer retention.
+
+The project covers the complete analytics workflow:
+
+**Data Cleaning → SQL Analysis → Exploratory Analysis → Power BI Dashboard → Business Insights → Recommendations**
 
 ---
 
 ## 🎯 Business Problem
 
-The objective of this project is to answer the following questions:
+Customer churn can negatively impact recurring revenue and customer lifetime value.
 
-* What percentage of customers are churning?
-* Which contract types have the highest churn?
-* Which customer segments are most likely to churn?
-* Does customer tenure affect churn?
-* Which payment methods have higher churn?
-* Does technical support affect customer retention?
-* Which services are associated with higher churn?
-* Which customer segments should the business target for retention?
+The objective of this analysis is to answer the following business questions:
 
----
-
-## 📊 Dataset
-
-The dataset contains customer-level information including:
-
-* Customer demographics
-* Tenure
-* Contract type
-* Internet service
-* Payment method
-* Monthly charges
-* Total charges
-* Technical support
-* Online security
-* Churn status
-
-### Dataset Size
-
-* **Total Customers:** 7,043
-* **Total Columns:** 21
-* **Churned Customers:** 1,869
-* **Overall Churn Rate:** 26.54%
+* What is the overall customer churn rate?
+* Which contract types have higher churn?
+* How does customer tenure relate to churn?
+* Which payment methods are associated with higher churn?
+* How does technical support relate to customer churn?
+* How does online security relate to churn?
+* Which customer segments should be prioritized for retention?
+* How can businesses use customer-level analysis to identify high-priority segments?
 
 ---
 
 ## 🛠️ Tools & Technologies
 
-* **Microsoft Excel** – Data cleaning and exploratory analysis
-* **MySQL** – Data analysis and SQL queries
-* **Power BI** – Interactive dashboard and visualization
+* **Microsoft Excel** – Data cleaning and preprocessing
+* **SQL** – Data analysis and business queries
+* **Power BI** – Interactive dashboards and visualization
+* **DAX** – Calculated measures and KPIs
 * **GitHub** – Project documentation and portfolio
 
 ---
 
-## 🧹 Data Cleaning
+## 📂 Project Structure
 
-The following data-cleaning activities were performed:
-
-1. Checked duplicate Customer IDs.
-2. Converted `TotalCharges` into a numeric data type.
-3. Handled blank values in `TotalCharges`.
-4. Converted `SeniorCitizen` from 0/1 into Yes/No.
-5. Created a `ChurnFlag` column for analysis.
-6. Created tenure groups for customer segmentation.
-7. Checked data types and missing values.
-
----
-
-## 📈 Key Performance Indicators
-
-| KPI                     |       Result |
-| ----------------------- | -----------: |
-| Total Customers         |        7,043 |
-| Churned Customers       |        1,869 |
-| Churn Rate              |       26.54% |
-| Average Monthly Charges |        64.76 |
-| Average Tenure          | 32.37 Months |
+```text
+customer-churn-analysis/
+│
+├── 📁 data/
+│   └── Customer_Churn_Analysis.xlsx
+│
+├── 📁 powerbi/
+│   └── Customer_Churn_Dashboard.pbix
+│
+├── 📁 screenshot/
+│   ├── dashboard_overview.png
+│   ├── churn_drivers.png
+│   └── customer_risk.png
+│
+├── 📁 sql/
+│   └── churn_analysis.sql
+│
+└── README.md
+```
 
 ---
 
-## 🔍 Key Insights
+## 🧹 Data Preparation
 
-### 1. Contract Type
+The dataset was prepared and cleaned before analysis.
 
-Month-to-month customers have a significantly higher churn rate compared with customers on long-term contracts.
+Key data preparation activities included:
 
-* Month-to-month: **42.71%**
-* One year: **11.27%**
-* Two year: **2.83%**
-
-### 2. Customer Tenure
-
-Customers in their first six months have the highest churn rate.
-
-* 0–6 months: **52.94%**
-* 7–12 months: **35.89%**
-* 49–72 months: **9.51%**
-
-### 3. Payment Method
-
-Customers using electronic checks have a significantly higher churn rate.
-
-* Electronic check: **45.29%**
-* Mailed check: **19.11%**
-* Bank transfer: **16.71%**
-* Credit card: **15.24%**
-
-### 4. Technical Support
-
-Customers without technical support show substantially higher churn.
-
-* No Tech Support: **41.64%**
-* Tech Support: **15.17%**
-
-### 5. Internet Service
-
-Fiber optic customers show a higher observed churn rate than DSL customers.
-
-* Fiber optic: **41.89%**
-* DSL: **18.96%**
+* Removing unnecessary data inconsistencies
+* Checking missing and duplicate records
+* Standardizing categorical values
+* Converting data types where required
+* Creating tenure groups for analysis
+* Preparing customer-level data for Power BI
+* Validating churn-related fields
 
 ---
 
-## 💡 Business Recommendations
+# 📈 Key Performance Indicators
 
-Based on the analysis, the following actions are recommended:
+The analysis focuses on the following KPIs:
 
-1. Encourage month-to-month customers to move to long-term contracts through targeted offers.
-2. Introduce a dedicated retention program for customers during their first six months.
-3. Promote technical support and security services as part of retention-focused packages.
-4. Investigate pricing and service experience among high-churn fiber optic customers.
-5. Review the electronic-check payment experience and promote smoother payment alternatives.
-6. Create a high-risk customer segment in Power BI for targeted retention campaigns.
+* **Total Customers**
+* **Churned Customers**
+* **Overall Churn Rate**
+* **Average Monthly Charges**
+* **Total Charges**
+
+The overall churn rate in the analyzed dataset is approximately **26.54%**.
 
 ---
 
-## 📊 Power BI Dashboard
+# 🔎 SQL Analysis
 
-The Power BI dashboard contains:
+SQL was used to perform customer-level and segment-level analysis.
 
-### Executive Overview
+The analysis includes:
+
+* Total customer count
+* Churned customer count
+* Overall churn rate
+* Churn by contract type
+* Churn by customer tenure
+* Churn by payment method
+* Churn by technical support
+* Churn by online security
+* Churn by internet service
+* Customer segmentation for churn analysis
+
+The SQL queries used for the analysis are available in:
+
+`sql/churn_analysis.sql`
+
+---
+
+# 📊 Power BI Dashboard
+
+The Power BI report contains three analytical pages.
+
+## 1️⃣ Executive Overview
+
+The Executive Overview provides a high-level summary of customer churn performance.
+
+It includes:
 
 * Total Customers
 * Churned Customers
 * Churn Rate
 * Average Monthly Charges
 * Total Charges
-* Churn distribution
+* Customer Churn Distribution
+* Churn Rate by Contract
+* Churn Rate by Tenure
+* Churn Rate by Internet Service
+* Key Business Insights
 
-### Churn Drivers
+### Dashboard Preview
 
-* Churn by Contract
-* Churn by Tenure
-* Churn by Payment Method
-* Churn by Internet Service
-* Churn by Technical Support
-* Churn by Online Security
+![Executive Overview](screenshot/dashboard_overview.png)
 
-### Customer Risk Analysis
+---
 
-The dashboard allows users to identify high-risk customer segments using filters such as:
+## 2️⃣ Churn Drivers & Customer Segments
+
+This page analyzes customer characteristics associated with different churn levels.
+
+The analysis covers:
+
+* Churn Rate by Payment Method
+* Churn Rate by Technical Support
+* Churn Rate by Online Security
+* Churn Rate by Paperless Billing
+* Churn Rate by Senior Citizen Status
+* Churn Rate by Contract Type
+* Churn Rate by Customer Tenure
+
+### Dashboard Preview
+
+![Churn Drivers](screenshot/churn_drivers.png)
+
+---
+
+## 3️⃣ Customer Risk Analysis
+
+This interactive page allows users to analyze customer segments using multiple filters.
+
+### Available Filters
 
 * Contract
 * Tenure
@@ -172,36 +176,124 @@ The dashboard allows users to identify high-risk customer segments using filters
 * Technical Support
 * Payment Method
 
----
+The dashboard also provides filtered KPIs such as:
 
-## 📁 Project Structure
+* Filtered Customers
+* Filtered Churned Customers
+* Filtered Churn Rate
 
-```text
-customer-churn-analysis/
-│
-├── data/
-│   └── Customer_Churn_Cleaned.xlsx
-│
-├── sql/
-│   └── churn_analysis.sql
-│
-├── powerbi/
-│   └── Customer_Churn_Dashboard.pbix
-│
-├── screenshots/
-│   ├── dashboard_overview.png
-│   ├── churn_drivers.png
-│   └── customer_risk.png
-│
-└── README.md
-```
+A customer-level table allows deeper investigation using:
+
+* Customer ID
+* Contract
+* Tenure
+* Monthly Charges
+* Internet Service
+* Technical Support
+* Payment Method
+* Churn Status
+
+### Dashboard Preview
+
+![Customer Risk Analysis](screenshot/customer_risk.png)
 
 ---
 
-## 📌 Conclusion
+# 💡 Key Insights
 
-The analysis indicates that customer churn is strongly associated with factors such as contract type, tenure, payment method, technical support and internet service.
+### 1. Overall Churn
 
-The highest-priority retention segments include **month-to-month customers, new customers and customers without technical support**.
+The overall customer churn rate is approximately **26.54%**, indicating a significant customer retention challenge.
 
-This project demonstrates an end-to-end data analytics workflow involving **data cleaning, SQL analysis, business insights and Power BI visualization**.
+### 2. Contract Type
+
+Month-to-month customers show the highest observed churn rate at approximately **42.71%**, while two-year contract customers show a much lower observed churn rate of approximately **2.83%**.
+
+### 3. Customer Tenure
+
+Customers in their first **0–6 months** show the highest observed churn rate at approximately **52.94%**.
+
+The observed churn rate declines as customer tenure increases.
+
+### 4. Payment Method
+
+Customers using **Electronic Check** show the highest observed churn rate among the analyzed payment methods, at approximately **45.29%**.
+
+### 5. Technical Support
+
+Customers without technical support show a substantially higher observed churn rate than customers with technical support.
+
+### 6. Online Security
+
+Customers without online security show a higher observed churn rate compared with customers who have the service.
+
+---
+
+# 🎯 Business Recommendations
+
+Based on the observed patterns in the dataset, the following actions could be considered:
+
+### 1. Focus on New Customers
+
+Develop stronger onboarding and early-stage engagement programs for customers during their first few months.
+
+### 2. Target Month-to-Month Customers
+
+Identify month-to-month customers for targeted retention campaigns and suitable long-term contract offers.
+
+### 3. Improve Support Engagement
+
+Investigate whether better technical support adoption and customer service engagement could contribute to improved retention.
+
+### 4. Investigate Electronic Check Customers
+
+Analyze the payment experience of electronic-check customers and consider promoting convenient alternative payment options where appropriate.
+
+### 5. Develop Customer Segmentation
+
+Use customer-level filters and churn patterns to create targeted retention campaigns instead of applying the same strategy to all customers.
+
+---
+
+# 🧠 Skills Demonstrated
+
+* Data Cleaning
+* Data Preprocessing
+* Exploratory Data Analysis
+* SQL Data Analysis
+* DAX
+* Power BI Dashboard Development
+* Data Visualization
+* Customer Segmentation
+* Churn Analysis
+* KPI Development
+* Business Intelligence
+* Business Insights
+* Data-Driven Recommendations
+
+---
+
+# 📌 Project Outcome
+
+This project demonstrates an end-to-end data analytics workflow, transforming raw customer data into meaningful business insights using **Excel, SQL, and Power BI**.
+
+The final solution enables stakeholders to:
+
+* Monitor overall churn
+* Identify customer segments with higher observed churn
+* Analyze churn patterns
+* Filter customer segments interactively
+* Investigate high-priority customer groups
+* Develop targeted customer retention strategies
+
+---
+
+## 👨‍💻 Author
+
+**Sachin**
+
+Aspiring Data Analyst | Excel | SQL | Power BI | Data Analytics
+
+---
+
+⭐ If you found this project useful, feel free to explore the repository and review the analysis.
