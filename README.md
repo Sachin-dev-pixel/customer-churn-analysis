@@ -126,22 +126,21 @@ The Executive Overview provides a high-level summary of customer churn performan
 
 It includes:
 
-* Total Customers
-* Churned Customers
-* Churn Rate
-* Average Monthly Charges
-* Total Charges
-* Customer Churn Distribution
-* Churn Rate by Contract
-* Churn Rate by Tenure
-* Churn Rate by Internet Service
-* Key Business Insights
+- Total Customers
+- Churned Customers
+- Churn Rate
+- Average Monthly Charges
+- Total Charges
+- Customer Churn Distribution
+- Churn Rate by Contract
+- Churn Rate by Tenure
+- Churn Rate by Internet Service
+- Key Business Insights
 
 ### Dashboard Preview
 
-![Executive Overview](Screenshot-Executive-Overview.png)
+![Executive Overview](./screenshot/Screenshot-Executive-Overview.png)
 
----
 
 ## 2️⃣ Churn Drivers & Customer Segments
 
@@ -149,19 +148,18 @@ This page analyzes customer characteristics associated with different churn leve
 
 The analysis covers:
 
-* Churn Rate by Payment Method
-* Churn Rate by Technical Support
-* Churn Rate by Online Security
-* Churn Rate by Paperless Billing
-* Churn Rate by Senior Citizen Status
-* Churn Rate by Contract Type
-* Churn Rate by Customer Tenure
+- Churn Rate by Payment Method
+- Churn Rate by Technical Support
+- Churn Rate by Online Security
+- Churn Rate by Paperless Billing
+- Churn Rate by Senior Citizen Status
+- Churn Rate by Contract Type
+- Churn Rate by Customer Tenure
 
 ### Dashboard Preview
 
-![Churn Drivers](Screenshot-Churn-Drivers.png)
+![Churn Drivers](./screenshot/Screenshot-Churn-Drivers.png)
 
----
 
 ## 3️⃣ Customer Risk Analysis
 
@@ -169,34 +167,33 @@ This interactive page allows users to analyze customer segments using multiple f
 
 ### Available Filters
 
-* Contract
-* Tenure
-* Monthly Charges
-* Internet Service
-* Technical Support
-* Payment Method
+- Contract
+- Tenure
+- Monthly Charges
+- Internet Service
+- Technical Support
+- Payment Method
 
 The dashboard also provides filtered KPIs such as:
 
-* Filtered Customers
-* Filtered Churned Customers
-* Filtered Churn Rate
+- Filtered Customers
+- Filtered Churned Customers
+- Filtered Churn Rate
 
 A customer-level table allows deeper investigation using:
 
-* Customer ID
-* Contract
-* Tenure
-* Monthly Charges
-* Internet Service
-* Technical Support
-* Payment Method
-* Churn Status
+- Customer ID
+- Contract
+- Tenure
+- Monthly Charges
+- Internet Service
+- Technical Support
+- Payment Method
+- Churn Status
 
 ### Dashboard Preview
 
-![Customer Risk Analysis](Screenshot-Customer-Risk-Analysis.png)
-
+![Customer Risk Analysis](./screenshot/Screenshot-Customer-Risk-Analysis.png)
 ---
 
 # 💡 Key Insights
