@@ -139,7 +139,7 @@ It includes:
 
 ### Dashboard Preview
 
-![Executive Overview](screenshot/dashboard_overview.png)
+![Executive Overview](Screenshot-Executive-Overview.png)
 
 ---
 
@@ -159,7 +159,7 @@ The analysis covers:
 
 ### Dashboard Preview
 
-![Churn Drivers](screenshot/churn_drivers.png)
+![Churn Drivers](Screenshot-Churn-Drivers.png)
 
 ---
 
@@ -195,7 +195,7 @@ A customer-level table allows deeper investigation using:
 
 ### Dashboard Preview
 
-![Customer Risk Analysis](screenshot/customer_risk.png)
+![Customer Risk Analysis](Screenshot-Customer-Risk-Analysis.png)
 
 ---
 
